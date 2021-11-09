@@ -39,3 +39,9 @@ swap = [ 1 0 0 0
          0 0 1 0
          0 1 0 0
          0 0 0 1 ];
+
+sdg = z ^ (1 / 2);
+
+tdg = t';
+
+from_theta_phi = @(t, p) cos(t / 2) * ket_0 + e ^ (i * p) * sin(p / 2) * ket_1;
